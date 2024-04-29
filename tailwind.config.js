@@ -12,9 +12,12 @@ export default {
       bgColor: '#bf281d',
       hoverColor: '#cab287',
       textBg: "#2e2b2b",
-      navbarColor: '#0e115e'
+      navbarColor: '#0e115e',
+      gray:'#808080',
+      imageBg: "#131518"
     }
   },
   plugins: [],
 }
 
+// 040E14

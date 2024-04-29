@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
+import OverlayText from "./components/OverlayText";
 
 import {
     BrowserRouter as Router,
@@ -23,6 +24,7 @@ function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/projects" element={<Projects />} />
+                <Route path="/overlay" element={<OverlayText />} />
                 {/* <Route path="*" element={<NotFound />} /> */}
             </Routes>
         </Router>

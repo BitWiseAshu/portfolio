@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "HeadlineHub",
+        "description": "This news app provides users with a comprehensive overview of the day’s headlines across various sections.",
+        "image": "https://c8.alamy.com/comp/2K2XB09/inspiration-showing-sign-today-news-business-showcase-latest-breaking-headlines-current-updates-trending-arrow-system-pointing-upwards-symbolizing-successful-project-completion-2K2XB09.jpg",
+        "link": "https://github.com/BitWiseAshu/News-App"
+    },
+    {
+        "id": 2,
+        "name": "Image’s Text Extracter",
+        "description": "This project was developed for Lava Company is centered around converting image’s text into text. This project is a simple image-to-text converter implemented in Python.",
+        "image": "https://assets-global.website-files.com/62a9e41d28a7ab25849bce9c/631d9a7e6e474e7fbb0d5100_A-Layman%E2%80%99s-Guide-to-Extract-Text-from-Images.jpg",
+        "link": "https://github.com/BitWiseAshu/Image_to_Text"
+    },
+    {
+        "id": 3,
+        "name": "Blog App",
+        "description": "This project is about a blog application in which a person can create his account and write their blog in the application.",
+        "image": "https://colmanandcompany.com/blog/wp-content/uploads/2014/04/blog-word-cloud1.jpg",
+        "link": "https://github.com/BitWiseAshu/Four-Cape-Web-Frontend"
+    },
+    {
+        "id": 4,
+        "name": "HeadlineHub",
+        "description": "This news app provides users with a comprehensive overview of the day’s headlines across various sections.",
+        "image": "https://c8.alamy.com/comp/2K2XB09/inspiration-showing-sign-today-news-business-showcase-latest-breaking-headlines-current-updates-trending-arrow-system-pointing-upwards-symbolizing-successful-project-completion-2K2XB09.jpg",
+        "link": "https://github.com/BitWiseAshu/News-App"
+    },
+    {
+        "id": 5,
+        "name": "Image’s Text Extracter",
+        "description": "This project was developed for Lava Company is centered around converting image’s text into text. This project is a simple image-to-text converter implemented in Python.",
+        "image": "https://assets-global.website-files.com/62a9e41d28a7ab25849bce9c/631d9a7e6e474e7fbb0d5100_A-Layman%E2%80%99s-Guide-to-Extract-Text-from-Images.jpg",
+        "link": "https://github.com/BitWiseAshu/Image_to_Text"
+    },
+    {
+        "id": 6,
+        "name": "Blog App",
+        "description": "This project is about a blog application in which a person can create his account and write their blog in the application.",
+        "image": "https://colmanandcompany.com/blog/wp-content/uploads/2014/04/blog-word-cloud1.jpg",
+        "link": "https://github.com/BitWiseAshu/Four-Cape-Web-Frontend"
+    }
+]
