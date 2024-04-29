@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 
 const Navbar = () => {
   return (
@@ -13,10 +14,10 @@ const Navbar = () => {
                 <div className='right'>
                     <nav>
                         <ul className='flex flex-row justify-aroung gap-[6rem] font-semibold mr-[20px] '>
-                            <li className='hover:text-blue-600'><NavLink to="/">Home</NavLink></li>
-                            <li className='hover:text-blue-600'><NavLink to="/about">About</NavLink></li>
-                            <li className='hover:text-blue-600'><NavLink to="/projects">Projects</NavLink></li>
-                            <li className='hover:text-blue-600'><NavLink to="/contact">Contact</NavLink></li>
+                            <li className='hover:text-navbarColor'><NavLink to="/"  spy={true} smooth={true} offset={50} duration={500}>Home</NavLink></li>
+                            <li className='hover:text-navbarColor'><NavLink to="/about" spy={true} smooth={true} offset={50} duration={500}>About</NavLink></li>
+                            <li className='hover:text-navbarColor'><NavLink to="/projects"  spy={true} smooth={true} offset={50} duration={500}>Projects</NavLink></li>
+                            <li className='hover:text-navbarColor'><NavLink to="/contact"  spy={true} smooth={true} offset={50} duration={500}>Contact</NavLink></li>
                         </ul>
                     </nav>
                 </div>
@@ -27,6 +28,45 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
+
+
+
+
+
+// import React from 'react'
+// import { NavLink } from 'react-router-dom'
+// import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+
+// const Navbar = () => {
+//   return (
+//     <>
+//         <header>
+//             <div className='container flex justify-between items items-center p-[2rem]'>
+//                 <div className='left'>
+//                     <p className='text-[1.5rem] font-bold ml-[5.1rem]'>Portfolio.</p>
+//                 </div>
+
+//                 <div className='right'>
+//                     <nav>
+//                         <ul className='flex flex-row justify-aroung gap-[6rem] font-semibold mr-[20px] '>
+//                             <li className='hover:text-navbarColor'><Link to="/"  spy={true} smooth={true} offset={500} duration={500}>Home</Link></li>
+//                             <li className='hover:text-navbarColor'><Link to="/about" spy={true} smooth={true} offset={500} duration={500}>About</Link></li>
+//                             <li className='hover:text-navbarColor'><Link to="/projects"  spy={true} smooth={true} offset={500} duration={500}>Projects</Link></li>
+//                             <li className='hover:text-navbarColor'><Link to="/contact"  spy={true} smooth={true} offset={500} duration={500}>Contact</Link></li>
+//                         </ul>
+//                     </nav>
+//                 </div>
+//             </div>
+//         </header>
+//     </>
+//   )
+// }
+
+// export default Navbar
+
+
 
 
 
