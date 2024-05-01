@@ -14,10 +14,10 @@ const Navbar = () => {
                 <div className='right'>
                     <nav>
                         <ul className='flex flex-row justify-aroung gap-[6rem] font-semibold mr-[20px] '>
-                            <li className='hover:text-navbarColor'><NavLink to="/"  spy={true} smooth={true} offset={50} duration={500}>Home</NavLink></li>
-                            <li className='hover:text-navbarColor'><NavLink to="/about" spy={true} smooth={true} offset={50} duration={500}>About</NavLink></li>
-                            <li className='hover:text-navbarColor'><NavLink to="/projects"  spy={true} smooth={true} offset={50} duration={500}>Projects</NavLink></li>
-                            <li className='hover:text-navbarColor'><NavLink to="/contact"  spy={true} smooth={true} offset={50} duration={500}>Contact</NavLink></li>
+                            <li className='hover:text-navbarColor hover:underline'><NavLink to="/"  spy={true} smooth={true} offset={50} duration={500}>Home</NavLink></li>
+                            <li className='hover:text-navbarColor hover:underline'><NavLink to="/about" spy={true} smooth={true} offset={50} duration={500}>About</NavLink></li>
+                            <li className='hover:text-navbarColor hover:underline'><NavLink to="/projects"  spy={true} smooth={true} offset={50} duration={500}>Projects</NavLink></li>
+                            <li className='hover:text-navbarColor hover:underline'><NavLink to="/contact"  spy={true} smooth={true} offset={50} duration={500}>Contact</NavLink></li>
                         </ul>
                     </nav>
                 </div>
@@ -28,9 +28,6 @@ const Navbar = () => {
 }
 
 export default Navbar
-
-
-
 
 
 

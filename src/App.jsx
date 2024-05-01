@@ -14,17 +14,17 @@ import {
 } from "react-router-dom";
 
 function App() {
+
   return (
     <div>
         <Router>
             <Navbar />
-
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/projects" element={<Projects />} />
-                <Route path="/overlay" element={<OverlayText />} />
+                {/* <Route path="/overlay" element={<OverlayText />} /> */}
                 {/* <Route path="*" element={<NotFound />} /> */}
             </Routes>
         </Router>

@@ -10,6 +10,7 @@ const Home = () => {
             <p className='font-extrabold text-[2.2rem]'>Om Nath Dixit</p>
             <p className='font-bold text-[2rem]'>And I am a <span className='text-[blue]'>Web Developer</span></p>
             <p className='text-justify mt-[3rem]'>Hey there! I'm Om Nath Dixit, a driven student of Computer Science with a deep passion for web development. As I navigate through my academic journey, I'm continually refining my skills and exploring the ever-evolving landscape of web technologies.</p>
+            <button className='font-semibold font-serif text-[1.5rem] bg-bgColor w-[10rem]  p-[0.5rem] rounded-xl hover:bg-hoverColor'>Contact Me</button>
         </div>
 
         <div className='right w-[25rem]'>

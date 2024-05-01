@@ -131,7 +131,7 @@ const Contact = () => {
             <FontAwesomeIcon icon={faFacebook} size="2xl" style={{color: "#3b5998",}} onClick={handleFacebookClick} className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'/>
             <FontAwesomeIcon icon={faLinkedin} size="2xl" style={{color: "#0e76a8",}} onClick={handleLinkedinClick} className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'/>
             <FontAwesomeIcon icon={faInstagram} size="2xl" style={{color: "#e4405f",}} onClick={handleInstagramClick} className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'/>
-            <FontAwesomeIcon icon={faGithub} size="2xl"style={{color: "#211F1F",}} onClick={handleGithubClick} className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'/>
+            <FontAwesomeIcon icon={faGithub} size="2xl"style={{color: "#211FF0",}} onClick={handleGithubClick} className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'/>
           </div>
         </div>
         
