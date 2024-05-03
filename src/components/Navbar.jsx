@@ -77,22 +77,22 @@ const Navbar = () => {
                         <ul className='flex flex-row justify-around gap-[4rem] font-semibold mr-[20px] lg:ml-[5rem] lg:pr-[2rem] md:ml-[2rem] md:pr-[3rem]'>
                             <div className='flex justify-center gap-2'>
                                 <FontAwesomeIcon icon={faHouse} style={{ color: "#FFD438" }} size="xl" />
-                                <li className='hover:text-navbarColor hover:underline font-serif text-[1.2rem] cursor-pointer'><NavLink to="/" spy={true} smooth={true} offset={50} duration={500}>Home</NavLink></li>
+                                <li className='hover:text-navbarColor hover:underline font-serif text-[1.2rem] cursor-pointer'><NavLink to="/" >Home</NavLink></li>
                             </div>
 
                             <div className='flex justify-center gap-2'>
                                 <FontAwesomeIcon icon={faAddressCard} style={{ color: "#FFD43B" }} size='xl' />
-                                <li className='hover:text-navbarColor hover:underline font-serif text-[1.2rem] cursor-pointer'><NavLink to="/about" spy={true} smooth={true} offset={50} duration={500}>About</NavLink></li>
+                                <li className='hover:text-navbarColor hover:underline font-serif text-[1.2rem] cursor-pointer'><NavLink to="/about">About</NavLink></li>
                             </div>
 
                             <div className='flex justify-center gap-2'>
                                 <FontAwesomeIcon icon={faDiagramProject} style={{ color: "#FFD43B" }} size='xl' />
-                                <li className='hover:text-navbarColor hover:underline font-serif text-[1.2rem] cursor-pointer'><NavLink to="/projects" spy={true} smooth={true} offset={50} duration={500}>Projects</NavLink></li>
+                                <li className='hover:text-navbarColor hover:underline font-serif text-[1.2rem] cursor-pointer'><NavLink to="/projects" >Projects</NavLink></li>
                             </div>
 
                             <div className='flex justify-center gap-2'>
                                 <FontAwesomeIcon icon={faAddressBook} style={{ color: "#FFD43B" }} size="xl" />
-                                <li className='hover:text-navbarColor hover:underline font-serif text-[1.2rem] cursor-pointer'><NavLink to="/contact" spy={true} smooth={true} offset={50} duration={500}>Contact</NavLink></li>
+                                <li className='hover:text-navbarColor hover:underline font-serif text-[1.2rem] cursor-pointer'><NavLink to="/contact">Contact</NavLink></li>
                             </div>
                         </ul>
                     </nav>

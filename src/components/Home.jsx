@@ -6,14 +6,14 @@ const Home = () => {
   return (
     <>
       <div className='flex m-[4rem] justify-around'>
-        <div className='left flex flex-col gap-[20px] w-[30rem] mr-[20rem]'>
+        <div className='left flex flex-col gap-[20px] w-[30rem] mr-[20rem] font-serif'>
             <p className='font-bold text-[2rem]'>Hello It's Me</p>
             <p className='font-extrabold text-[2.2rem]'>Om Nath Dixit</p>
             <p className='font-bold text-[2rem]'>And I am a <span className='text-[blue]'>Web Developer</span></p>
             <p className='text-justify mt-[3rem]'>Hey there! I'm Om Nath Dixit, a driven student of Computer Science with a deep passion for web development. As I navigate through my academic journey, I'm continually refining my skills and exploring the ever-evolving landscape of web technologies.</p>
             {/* Wrap the button with Link */}
             <Link to='/contact'>
-              <button className='font-semibold font-serif text-[1.5rem] bg-bgColor w-[10rem]  p-[0.5rem] rounded-xl hover:bg-hoverColor'>Contact Me</button>
+              <button className='font-semibold text-[1.5rem] bg-bgColor w-[10rem]  p-[0.5rem] rounded-xl hover:bg-hoverColor font-serif'>Contact Me</button>
             </Link>
         </div>
 

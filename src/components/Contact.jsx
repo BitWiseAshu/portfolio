@@ -111,22 +111,22 @@ const Contact = () => {
   return (
     <div className='flex justify-around m-[1rem] p-[2rem] items-center'>
       <div className='left w-[30rem] space-y-[2rem] '>
-        <h1 className='font-bold text-[3rem]'>Contact Me</h1>
+        <h1 className='font-bold text-[3rem] font-serif'>Contact Me</h1>
 
         <div className='space-y-[1.5rem]'>
-          <div className='flex space-x-3 items-center '>
-            <FontAwesomeIcon icon={faPaperPlane} size="2xl" style={{color: "#ea1010",}} />
+          <div className='flex space-x-3 items-center font-serif'>
+            <FontAwesomeIcon icon={faPaperPlane} size="2xl" style={{color: "#ea1010",}}/>
             <p>omnathdixit7033@gmail.com</p>
           </div>
 
-          <div className='flex space-x-3 items-center'>
+          <div className='flex space-x-3 items-center font-serif'>
             <FontAwesomeIcon icon={faSquarePhone} size="2xl" style={{color: "#da1010",}} />
             <p>+91 7033004295</p>
           </div>
         </div>
 
         <div className='space-y-[1rem]'>
-          <p className='font-semibold text-xl'>Follow Me</p>
+          <p className='font-semibold text-xl font-serif'>Follow Me</p>
           <div className='flex space-x-6'>
             <FontAwesomeIcon icon={faFacebook} size="2xl" style={{color: "#3b5998",}} onClick={handleFacebookClick} className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'/>
             <FontAwesomeIcon icon={faLinkedin} size="2xl" style={{color: "#0e76a8",}} onClick={handleLinkedinClick} className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'/>
@@ -136,7 +136,7 @@ const Contact = () => {
         </div>
         
         <div>
-          <button className='mt-[1rem] bg-bgColor p-[1rem] rounded-[1rem] text-[1.2rem] hover:bg-hoverColor transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300' onClick={handleDownloadResume}>Download Resume</button>
+          <button className='mt-[1rem] bg-bgColor p-[1rem] rounded-[1rem] text-[1.2rem] hover:bg-hoverColor transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 font-serif' onClick={handleDownloadResume}>Download Resume</button>
         </div>
       </div>
 
@@ -184,7 +184,7 @@ const Contact = () => {
           </div>
 
           <div>
-            <button className='w-[10rem] mt-[1rem] bg-bgColor p-[0.5rem] text-[1.2rem] rounded-[0.5rem] hover:bg-hoverColor transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300' onClick={handleSubmit}>Submit</button>
+            <button className='w-[10rem] mt-[1rem] bg-bgColor p-[0.5rem] text-[1.2rem] rounded-[0.5rem] hover:bg-hoverColor transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 font-serif' onClick={handleSubmit}>Submit</button>
           </div>
         </form>
       </div>
