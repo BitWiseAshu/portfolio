@@ -26,31 +26,31 @@ const About = () => {
             <div className='space-y-[0.5rem] max-[500px]:space-y-0'>
               <p className='font-bold text-aboutColor'>HTML, CSS, JavaScript</p>
               <div>
-                <ProgressBar completed={80} bgColor="grey" animateOnRender={true} />
+                <ProgressBar completed={80} bgColor="Orange" animateOnRender={true} />
               </div>
             </div>
             <div className='space-y-[0.5rem] max-[500px]:space-y-0'>
               <p className='font-bold text-aboutColor'>Data Structures and Algorithm in Java</p>
               <div>
-                <ProgressBar completed={90} bgColor="grey" animateOnRender={true} />
+                <ProgressBar completed={90} bgColor="Orange" animateOnRender={true} />
               </div>
             </div>
             <div className='space-y-[0.5rem] max-[500px]:space-y-0'>
               <p className='font-bold text-aboutColor'>React Js, Tailwind CSS</p>
               <div>
-                <ProgressBar completed={85} bgColor="grey" animateOnRender={true} />
+                <ProgressBar completed={85} bgColor="Orange" animateOnRender={true} />
               </div>
             </div>
             <div className='space-y-[0.5rem] max-[500px]:space-y-0'>
               <p className='font-bold text-aboutColor'>Node js, Express js</p>
               <div>
-                <ProgressBar completed={70} bgColor="grey" animateOnRender={true} />
+                <ProgressBar completed={70} bgColor="Orange" animateOnRender={true} />
               </div>
             </div>
             <div className='space-y-[0.5rem] max-[500px]:space-y-0'>
               <p className='font-bold text-aboutColor'>GIT/GitHub, MongoDB, Postman</p>
               <div>
-                <ProgressBar completed={80} bgColor="grey" animateOnRender={true} />
+                <ProgressBar completed={80} bgColor="Orange" animateOnRender={true} />
               </div>
             </div>
           </div>
