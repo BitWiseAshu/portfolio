@@ -66,7 +66,7 @@ const Navbar = () => {
     };
 
     return (
-        <header className='sticky  max-[426px]:bg-imageBg'>
+        <header className='sticky  max-[426px]:bg-imageBg '>
             <div className='container flex justify-between items-center p-[2rem]'>
                 <div className='left'>
                     <p className='text-[2rem] font-serif font-bold ml-[5rem] lg:text-[3rem] xl:ml-[10rem]  md:text-[2rem] md:ml-[1.5rem]   max-[321px]:ml-[1rem]  max-[426px]:ml-[1rem]'>Portfolio.</p>
@@ -74,7 +74,7 @@ const Navbar = () => {
 
                 <div className='right'>
                     <nav className="md:flex hidden">
-                        <ul className='flex flex-row justify-around gap-[4rem] font-semibold mr-[20px] lg:ml-[5rem] lg:pr-[2rem] md:ml-[2rem] md:pr-[3rem]'>
+                        <ul className='flex flex-row justify-around gap-[4rem] font-semibold mr-[20px] lg:ml-[5rem] lg:pr-[2rem] md:ml-[2rem] md:pr-[0rem]'>
                             <div className='flex justify-center gap-2'>
                                 <FontAwesomeIcon icon={faHouse} style={{ color: "#FFD438" }} size="xl" />
                                 <li className='hover:text-navbarColor hover:underline font-serif text-[1.2rem] cursor-pointer'><NavLink to="/" >Home</NavLink></li>

@@ -109,9 +109,9 @@ const Contact = () => {
   };
 
   return (
-    <div className='flex justify-around m-[1rem] p-[2rem] items-center'>
-      <div className='left w-[30rem] space-y-[2rem] '>
-        <h1 className='font-bold text-[3rem] font-serif'>Contact Me</h1>
+    <div className='flex justify-around m-[1rem] p-[2rem] items-center lg:ml-[5rem] lg:gap-[3rem] xl:gap-[0rem] md:ml-[3rem] max-[700px]:flex-col max-[700px]:gap-[2rem] max-[700px]:p-0 max-[400px]:m-0'>
+      <div className='left w-[21rem] space-y-[3rem] max-[700px]:p-[3rem] max-[700px]:pt-0 max-[700px]:w-[25rem] max-[400px]:p-0 max-[400px]:w-[20rem] max-[330px]:w-[18rem]  max-[330px]:ml-[2rem] max-[400px]:space-y-10 max-[400px]:mt-[1rem] xl:ml-[3rem] xl:mr-0'>
+        <h1 className='font-bold text-[3rem] font-serif lg:text-[2.5rem] md:text-[2rem] max-[400px]:text-[2.5rem]'>Contact Me</h1>
 
         <div className='space-y-[1.5rem]'>
           <div className='flex space-x-3 items-center font-serif'>
@@ -136,13 +136,13 @@ const Contact = () => {
         </div>
         
         <div>
-          <button className='mt-[1rem] bg-bgColor p-[1rem] rounded-[1rem] text-[1.2rem] hover:bg-hoverColor transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 font-serif' onClick={handleDownloadResume}>Download Resume</button>
+          <button className='mt-[1rem] bg-bgColor p-[1rem] rounded-[1rem] text-[1.2rem] hover:bg-hoverColor transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 font-serif max-[400px]:text-[1rem]' onClick={handleDownloadResume}>Download Resume</button>
         </div>
       </div>
 
 
-      <div>
-        <form className='space-y-[1.5rem]'>
+      <div className='md:ml-[3rem] lg:ml-10 max-[400px]:mt-[2rem]'>
+        <form className='space-y-[1.5rem] lg:w-[35rem] xl:w-[40rem] md:w-[25rem] lg:ml-0 md:ml-[3rem] max-[700px]:w-[25rem] max-[700px]:pl-[2rem] max-[400px]:pl-0 max-[400px]:w-[20rem] max-[330px]:w-[18rem]  max-[330px]:ml-[2rem] max-[400px]:mb-[2rem] max-[400px]:space-y-[1rem]'>
           <div>
             <input
               type="text"
@@ -184,7 +184,7 @@ const Contact = () => {
           </div>
 
           <div>
-            <button className='w-[10rem] mt-[1rem] bg-bgColor p-[0.5rem] text-[1.2rem] rounded-[0.5rem] hover:bg-hoverColor transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 font-serif' onClick={handleSubmit}>Submit</button>
+            <button className='w-[10rem] mt-[1rem] bg-bgColor p-[0.5rem] text-[1.2rem] rounded-[0.5rem] hover:bg-hoverColor transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 font-serif max-[400px]:text-[1rem] max-[400px]:w-[8rem] max-[400px]:mt-[0.5rem]' onClick={handleSubmit}>Submit</button>
           </div>
         </form>
       </div>
