@@ -1,9 +1,12 @@
 import React from 'react'
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPaperPlane, faSquarePhone } from '@fortawesome/free-solid-svg-icons';
+import { faPaperPlane, faSquarePhone, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faTwitter, faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 import Resume from '../assets/Resume.pdf';
+
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import validator from 'validator';
 
@@ -38,10 +41,17 @@ const Contact = () => {
     data.append('email', formData.email);
     data.append('message', formData.message);
 
+    if (formData.name === '' || formData.email === '' || formData.message === '') {
+      // alert('Please fill in all fields');
+      showToastMessage(null, "Please fill in all fields");
+      return;
+    }
+
     // console.log(data.get('email'));
     const emailValid = data.get('email');
     if (!validator.isEmail(emailValid)) {
-      alert('Please enter a valid email address');
+      // alert('Please enter a valid email address');
+      showToastMessage(null, "Please enter a valid email address");
       setFormData({
         name: formData.name,
         email: '',
@@ -60,7 +70,8 @@ const Contact = () => {
         // muteHttpExceptions: true
       });
 
-      alert('Message sent successfully');
+      // alert('Message sent successfully');
+      showToastMessage("Message sent successfully", null);
       setFormData({
         name: '',
         email: '',
@@ -106,6 +117,38 @@ const Contact = () => {
   
   const handleGithubClick = () => {
     window.location.href = 'https://github.com/BitWiseAshu';
+  };
+
+  const showToastMessage = (successMessage, errorMessage) => {
+    if (successMessage) {
+      toast.success(successMessage, {
+        position: 'top-center',
+        closeButton: ({ closeToast }) => (
+          <FontAwesomeIcon icon={faTimes} style={{ color: 'blue', cursor: 'pointer', fontSize: '1.5rem' }} onClick={closeToast} />
+        ),
+        style: {
+          background: 'green',
+          color: 'white',
+          fontSize: '0.9rem',
+          fontWeight: 'bold'
+        }
+      });
+    }
+  
+    if (errorMessage) {
+      toast.error(errorMessage, {
+        position: 'top-center',
+        closeButton: ({ closeToast }) => (
+          <FontAwesomeIcon icon={faTimes} style={{ color: 'blue', cursor: 'pointer', fontSize: '1.5rem' }} onClick={closeToast} />
+        ),
+        style: {
+          background: 'orange',
+          color: 'white',
+          fontSize: '0.9rem',
+          fontWeight: 'bold'
+        }
+      });
+    }
   };
 
   return (
@@ -191,5 +234,6 @@ const Contact = () => {
     </div>
   )
 }
+
 
 export default Contact

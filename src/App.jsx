@@ -7,6 +7,9 @@ import Projects from "./components/Projects";
 import Error from "./components/Error";
 import Internship from "./components/Internship";
 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -15,12 +18,24 @@ import {
 } from "react-router-dom";
 
 function App() {
+  
+  const progressBarStyle = `
+    .custom-progress-bar {
+      background-color: blue !important;
+    }
+  `;
 
   return (
     <div>
+
+<style>{progressBarStyle}</style>
       <Router>
         <Navbar />
-
+        <ToastContainer 
+          progressClassName="custom-progress-bar"
+          autoClose='3000'
+          hideProgressBar={false}
+        />
         {/* <Home />
             <About />
             <Projects />

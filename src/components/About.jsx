@@ -21,7 +21,7 @@ const About = () => {
         </div>
 
         <div className=' flex flex-col space-y-5 pl-[2rem] pb-[2rem] ml-[2rem] lg:w-[33rem] lg:mt-[3rem] xl:w-[45rem] xl:mt-0 max-[767px]:p-[1rem] max-[380px]:text-[0.7rem]'>
-          <p className='text-[2rem] font-semibold text-aboutColor2 underline max-[767px]:font-serif max-[500px]:text-center max-[330px]:text-[1.5rem]'>Skills</p>
+          <p className='text-[2rem] font-semibold text-aboutColor2 underline max-[500px]:text-center max-[330px]:text-[1.5rem] font-serif'>Skills</p>
           <div className='space-y-[1rem] max-[500px]:space-y-3 max-[767px]:font-serif '>
             <div className='space-y-[0.5rem] max-[500px]:space-y-0'>
               <p className='font-bold text-aboutColor'>HTML, CSS, JavaScript</p>
