@@ -12,7 +12,7 @@ const Navbar = () => {
     };
 
     return (
-        <header className='sticky max-[426px]:bg-imageBg opacity-100'>
+        <header className='sticky opacity-100'>
             <div className='container flex justify-between items-center p-[2rem]'>
                 <div className='left'>
                     <p className='text-[2rem] font-serif font-bold ml-[5rem] lg:text-[3rem] xl:ml-[10rem]  md:text-[2rem] md:ml-[1.5rem] max-[321px]:ml-[1rem]  max-[426px]:ml-[1rem] text-shadow-2xl text-[#581c87] animate-flip-up animate-duration-3000 animate-delay-500'>Portfolio.</p>
