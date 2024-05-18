@@ -110,6 +110,8 @@
 
 import React, { useState, useEffect } from 'react';
 import projectsData from '../my_projects.json';
+import Typewriter from './Typewriter'
+
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -121,15 +123,20 @@ const Projects = () => {
   const handleImageClick = (link) => {
     window.open(link, '_blank');
   };
+  
 
   return (
-    <div className="container mx-auto px-4 py-8 max-[767px]:w-[25rem] max-[400px]:w-[22rem] max-[400px]:px-0 max-[330px]:w-[20rem]">
-      <h1 className="text-center max-[500px]:text-[2rem] font-semibold text-aboutColor2 mb-8 font-serif text-[3rem] max-[769px]:ml-[7rem] max-[500px]:ml-[0rem] max-[400px]:text-[1.5rem] max-[400px]:mb-5 max-[400px]:ml-0 ">My Projects</h1>
+    <div className="container mx-auto px-4 py-8 max-[767px]:w-[25rem] max-[400px]:w-[22rem] max-[400px]:px-0 max-[330px]:w-[20rem]"> 
+    
+  <h1 className="text-center max-[500px]:text-[2rem] font-semibold text-[#4f4db4] mb-8 font-serif text-[3rem] max-[769px]:ml-[7rem] max-[500px]:ml-[0rem] max-[400px]:text-[1.5rem] max-[400px]:mb-5 max-[400px]:ml-0">
+      <Typewriter text="Welcome to My Projects"  value={1}/>
+    </h1>
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[4rem] ml-[2rem] mr-[2rem] md:pl-[5rem] lg:pl-0 max-[769px]:w-[48rem] max-[500px]:w-[10rem]">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-2 max-[769px]:w-[20rem]  max-[769px]:pr-[2rem] max-[330px]:w-[18rem]"
+            className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-[#b89494] transition duration-300 ease-in-out transform hover:-translate-y-2 max-[769px]:w-[20rem]  max-[769px]:pr-[2rem] max-[330px]:w-[18rem]"
           >
             <img
               src={project.image}
@@ -168,10 +175,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-
-
-
-
-
-

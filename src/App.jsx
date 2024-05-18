@@ -21,7 +21,7 @@ function App() {
   
   const progressBarStyle = `
     .custom-progress-bar {
-      background-color: blue !important;
+      background-color: purple !important;
     }
   `;
 

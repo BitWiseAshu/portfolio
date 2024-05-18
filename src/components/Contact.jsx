@@ -9,6 +9,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import validator from 'validator';
+import Typewriter from './Typewriter';
 
 
 const Contact = () => {
@@ -124,10 +125,10 @@ const Contact = () => {
       toast.success(successMessage, {
         position: 'top-center',
         closeButton: ({ closeToast }) => (
-          <FontAwesomeIcon icon={faTimes} style={{ color: 'blue', cursor: 'pointer', fontSize: '1.5rem' }} onClick={closeToast} />
+          <FontAwesomeIcon icon={faTimes} style={{ color: 'white', cursor: 'pointer', fontSize: '1.5rem' }} onClick={closeToast} />
         ),
         style: {
-          background: 'green',
+          background: '#90EE90',
           color: 'white',
           fontSize: '0.9rem',
           fontWeight: 'bold'
@@ -139,10 +140,10 @@ const Contact = () => {
       toast.error(errorMessage, {
         position: 'top-center',
         closeButton: ({ closeToast }) => (
-          <FontAwesomeIcon icon={faTimes} style={{ color: 'blue', cursor: 'pointer', fontSize: '1.5rem' }} onClick={closeToast} />
+          <FontAwesomeIcon icon={faTimes} style={{ color: 'white', cursor: 'pointer', fontSize: '1.5rem' }} onClick={closeToast} />
         ),
         style: {
-          background: 'orange',
+          background: 'red',
           color: 'white',
           fontSize: '0.9rem',
           fontWeight: 'bold'
@@ -159,12 +160,12 @@ const Contact = () => {
         <div className='space-y-[1.5rem]'>
           <div className='flex space-x-3 items-center font-serif'>
             <FontAwesomeIcon icon={faPaperPlane} size="2xl" style={{color: "#ea1010",}}/>
-            <p>omnathdixit7033@gmail.com</p>
+            <Typewriter text="omnathdixit7033@gmail.com" value={1}/>
           </div>
 
           <div className='flex space-x-3 items-center font-serif'>
             <FontAwesomeIcon icon={faSquarePhone} size="2xl" style={{color: "#da1010",}} />
-            <p>+91 7033004295</p>
+            <Typewriter text="+91 7033004295" value={1}/>
           </div>
         </div>
 

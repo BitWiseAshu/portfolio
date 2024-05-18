@@ -5,7 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      
+    },
     colors: {
       textColor: '#968750',
       stone: '#a1a1aa',
@@ -19,7 +21,9 @@ export default {
       aboutColor2: "#826924",
     }
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated'),
+  ],
 }
 
 // 040E14

@@ -2,17 +2,18 @@ import React from 'react'
 import male from '../assets/male_image.png'
 import ProgressBar from "@ramonak/react-progress-bar";
 import { Link } from 'react-router-dom'
+import myImg from '../assets/Ashu.jpg'
 
 const About = () => {
   return (
     <div className='flex justify-around lg:gap-[1rem] md:gap-[2rem] w-full max-[767px]:flex-col'>
-      <div className='left xl:w-[50rem] lg:w-[55rem] md:w-[25rem] '>
+      <div className='left xl:w-[50rem] lg:w-[55rem] md:w-[25rem]  lg:ml-[1rem] xl:ml-0'>
 
-        <div className='flex lg:flex-row items-center p-[2rem] gap-[2rem] lg:mb-[3rem] xl:mb-5 md:flex-col max-[500px]:flex-col max-[500px]:m-[0rem]'>
-          <div className='lg:w-[15rem] md:w-[22rem] max-[500px]:w-[20rem] max-[330px]:w-[15rem]'>
-            <img src={male} alt="My Image" />
+        <div className='flex lg:flex-row items-center p-[2rem] gap-[2rem] xl:gap-[5rem] lg:mb-[3rem] xl:mb-5 md:flex-col max-[500px]:flex-col max-[500px]:m-[0rem]'>
+          <div className='lg:w-[18rem] xl:w-[12rem] md:w-[14rem] max-[500px]:w-[20rem] max-[330px]:w-[15rem] animate-fade-left animate-duration-[2s] ml-[2rem]'>
+            <img src={myImg} alt="My Image" className='rounded-[8rem]'/>
           </div>
-          <div className='space-y-[1.5rem] lg:space-y-[2rem] md:space-y-[1rem] max-[500px]:space-y-2 '>
+          <div className='space-y-[1.5rem] lg:space-y-[2rem] md:space-y-[1rem] max-[500px]:space-y-2 animate-fade-left animate-duration-[2s] md:ml-[2rem] lg:ml-0'>
             <p> <span className='font-bold text-textColor max-[330px]:text-[0.8rem]'> Name:   </span> <span className='text-stone max-[330px]:text-[0.8rem]'>Om Nath Dixit</span></p>
             <p> <span className='font-bold text-textColor max-[330px]:text-[0.8rem]'> Profile:</span> <span className='text-stone max-[330px]:text-[0.8rem]'>Web Developer</span></p>
             <p> <span className='font-bold text-textColor max-[330px]:text-[0.8rem]'> Email:  </span> <span className='text-stone max-[330px]:text-[0.8rem]'>omnathdixit7033@gmail.com</span></p>
@@ -70,6 +71,10 @@ const About = () => {
             My fascination with web development stems from its limitless potential to bring ideas to life and make an impact on people's lives. With every line of code I write, I strive to create websites that are not only visually stunning but also intuitive and user-friendly.
           </p>
 
+          <p className='font-serif max-[380px]:text-[0.8rem] max-[330px]:text-justify text-justify lg:w-[25rem] xl:w-[32rem] md:w-[25rem]'>
+          From crafting snazzy interfaces to untangling the backend mysteries, I'm your go-to guy for all things web-related. When I'm not glued to my screen, you'll probably catch me geeking out over the latest tech trends or brainstorming over a steaming cup of coffee.
+          </p>
+
         </div>
 
         <div className='space-y-3 lg:space-y-3 lg:pr-[2rem]'>
@@ -79,14 +84,10 @@ const About = () => {
             <div className='space-y-1 max-[380px]:text-[0.8rem]'>
               <h3 className='font-bold text-[1.2rem] text-aboutColor2'>Amity University, Uttar Pradesh (2021-2025)</h3>
               <p className='font-bold  text-aboutColor'>Bachelor's in Technology, Computer Science and Engineering</p>
-              <p className='text-justify font-serif'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p className='text-justify font-serif' >Currently, I'm a tech enthusiast enrolled in the Bachelor of Technology (B.Tech.) program in Computer Science and Engineering at Amity University, Uttar Pradesh. My passion lies in unraveling the intricacies of technology, with a particular focus on web development. I'm dedicated to leveraging my education to drive innovation and create impactful solutions in the ever-evolving tech sphere.</p>
             </div>
 
-            <div className='space-y-1  max-[380px]:text-[0.8rem]'>
-              <h3  className='font-bold text-[1.2rem]  text-aboutColor2'>SBDPR College, Saran (2019 - 2021)</h3>
-              <p className='font-bold  text-aboutColor'>Senior Secondary School</p>
-              <p className='text-justify font-serif'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
+            
           </div>
         </div>
       </div>
