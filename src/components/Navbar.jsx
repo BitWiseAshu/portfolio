@@ -58,22 +58,22 @@ const Navbar = () => {
                         <ul className="bg-white shadow-lg ">
                             <div className='flex items-center justify-center mr-[8rem]'>
                                 <FontAwesomeIcon icon={faHouse} style={{ color: "#FFD438" }} size="x" />
-                                <li className='block py-2 px-4 text-[#fff] hover:text-navbarColor hover:underline font-serif cursor-pointer'><NavLink to="/" onClick={toggleNavbar}>Home</NavLink></li>
+                                <li className='block py-2 px-4  hover:text-navbarColor hover:underline font-serif cursor-pointer'><NavLink to="/" onClick={toggleNavbar}>Home</NavLink></li>
                             </div>
 
                             <div className='flex items-center justify-center mr-[8rem]'>
                                 <FontAwesomeIcon icon={faAddressCard} style={{ color: "#FFD43B" }} size='x' />
-                                <li className='block py-2 px-4 text-[#fff] hover:text-navbarColor hover:underline font-serif cursor-pointer'><NavLink to="/about" onClick={toggleNavbar}>About</NavLink></li>
+                                <li className='block py-2 px-4  hover:text-navbarColor hover:underline font-serif cursor-pointer'><NavLink to="/about" onClick={toggleNavbar}>About</NavLink></li>
                             </div>
 
                             <div className='flex items-center justify-center mr-[8rem]'>
                                 <FontAwesomeIcon icon={faDiagramProject} style={{ color: "#FFD43B" }} size='x' />
-                                <li className='block py-2 px-2 text-[#fff] hover:text-navbarColor hover:underline font-serif cursor-pointer'><NavLink to="/projects" onClick={toggleNavbar}>Projects</NavLink></li>
+                                <li className='block py-2 px-2  hover:text-navbarColor hover:underline font-serif cursor-pointer'><NavLink to="/projects" onClick={toggleNavbar}>Projects</NavLink></li>
                             </div>
 
                             <div className='flex items-center justify-center mr-[8rem]'>
                                 <FontAwesomeIcon icon={faAddressBook} style={{ color: "#FFD43B" }} size="x" />
-                                <li className='block py-2 px-3 text-[#fff] hover:text-navbarColor hover:underline font-serif cursor-pointer'><NavLink to="/contact" onClick={toggleNavbar}>Contact</NavLink></li>
+                                <li className='block py-2 px-3 hover:text-navbarColor hover:underline font-serif cursor-pointer'><NavLink to="/contact" onClick={toggleNavbar}>Contact</NavLink></li>
                             </div>
                         </ul>
                     </nav>
