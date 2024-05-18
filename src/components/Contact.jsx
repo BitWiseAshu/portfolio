@@ -186,7 +186,7 @@ const Contact = () => {
 
 
       <div className='md:ml-[3rem] lg:ml-10 max-[400px]:mt-[2rem]'>
-        <form className='space-y-[1.5rem] lg:w-[35rem] xl:w-[40rem] md:w-[25rem] lg:ml-0 md:ml-[3rem] max-[700px]:w-[25rem] max-[700px]:pl-[2rem] max-[400px]:pl-0 max-[400px]:w-[20rem] max-[330px]:w-[18rem]  max-[330px]:ml-[2rem] max-[400px]:mb-[2rem] max-[400px]:space-y-[1rem]'>
+        <form className='space-y-[1.5rem] lg:w-[35rem] xl:w-[40rem] md:w-[25rem] lg:ml-0 md:ml-[3rem] max-[700px]:w-[25rem] max-[700px]:pl-[2rem] max-[400px]:pl-0 max-[400px]:w-[20rem] max-[330px]:w-[18rem] max-[330px]:ml-[2rem] max-[400px]:mb-[2rem] max-[400px]:space-y-[1rem]'>
           <div>
             <input
               type="text"
@@ -195,7 +195,7 @@ const Contact = () => {
               value={formData.name}
               onChange={handleInputChange}
               placeholder='Your Name'
-              className='p-[1rem] w-[90%] rounded-[0.5rem]  bg-textBg'
+              className='p-[1rem] w-[90%] rounded-[0.5rem]   text-[#fff]'
               required
             />
           </div>
@@ -208,7 +208,7 @@ const Contact = () => {
               value={formData.email}
               onChange={handleInputChange}
               placeholder='Your Email'
-              className='p-[1rem] w-[90%] rounded-[0.5rem]  bg-textBg'
+              className='p-[1rem] w-[90%] rounded-[0.5rem]   text-[#fff]'
               required
             />
           </div>
@@ -222,7 +222,7 @@ const Contact = () => {
               cols={90}
               rows={7}
               placeholder='Your Message'
-              className='p-[1rem] w-[90%] rounded-[0.5rem] bg-textBg'
+              className='p-[1rem] w-[90%] rounded-[0.5rem]  text-[#fff]'
               required
             />
           </div>
