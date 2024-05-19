@@ -95,6 +95,8 @@ const Contact = () => {
     // Set the href and download attributes
     link.href = resumeUrl;
     link.download = fileName;
+    // Add the "target" attribute to open the link in a new tab
+    link.target = '_blank';
     // Simulate a click event to trigger the download
     link.click();
     // Remove the temporary anchor element
