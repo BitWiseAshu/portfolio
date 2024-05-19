@@ -86,7 +86,6 @@ const Contact = () => {
 
   };
 
-  
   const handleDownloadResume = () => {
     const resumeUrl = 'https://drive.google.com/uc?export=download&id=1O39Sler6UZhTGKGki-cdhcXpD9x3QGML';
     // Specify the file name for download
@@ -97,10 +96,9 @@ const Contact = () => {
     link.href = resumeUrl;
     link.download = fileName;
     // Simulate a click event to trigger the download
-    document.body.appendChild(link);
     link.click();
     // Remove the temporary anchor element
-    document.body.removeChild(link);
+    link.remove();
   };
 
 
