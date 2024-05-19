@@ -87,21 +87,32 @@ const Contact = () => {
   };
 
   const handleDownloadResume = () => {
-    const resumeUrl = 'https://drive.google.com/uc?export=download&id=1O39Sler6UZhTGKGki-cdhcXpD9x3QGML';
-    // Specify the file name for download
+    const resumeUrl = 'https://drive.google.com/file/d/1O39Sler6UZhTGKGki-cdhcXpD9x3QGML/view?usp=sharing';
     const fileName = 'Omnath_Dixit_Resume.pdf';
-    // Create a temporary anchor element
     const link = document.createElement('a');
-    // Set the href and download attributes
     link.href = resumeUrl;
     link.download = fileName;
-    // Add the "target" attribute to open the link in a new tab
-    link.target = '_blank';
-    // Simulate a click event to trigger the download
+    document.body.appendChild(link);
     link.click();
-    // Remove the temporary anchor element
-    link.remove();
+    document.body.removeChild(link);
   };
+
+  // const handleDownloadResume = () => {
+  //   const resumeUrl = 'https://drive.google.com/file/d/1O39Sler6UZhTGKGki-cdhcXpD9x3QGML/view?usp=sharing';
+  //   // Specify the file name for download
+  //   const fileName = 'Omnath_Dixit_Resume.pdf';
+  //   // Create a temporary anchor element
+  //   const link = document.createElement('a');
+  //   // Set the href and download attributes
+  //   link.href = resumeUrl;
+  //   link.download = fileName;
+  //   // Add the "target" attribute to open the link in a new tab
+  //   link.target = '_blank';
+  //   // Simulate a click event to trigger the download
+  //   link.click();
+  //   // Remove the temporary anchor element
+  //   link.remove();
+  // };
 
 
   const handleFacebookClick = () => {
