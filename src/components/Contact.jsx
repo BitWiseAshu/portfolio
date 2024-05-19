@@ -92,28 +92,12 @@ const Contact = () => {
     const link = document.createElement('a');
     link.href = resumeUrl;
     link.download = fileName;
+    link.target = '_blank'; // Open the link in a new tab
+    link.rel = 'noopener noreferrer'; // Add security attributes
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
-
-  // const handleDownloadResume = () => {
-  //   const resumeUrl = 'https://drive.google.com/file/d/1O39Sler6UZhTGKGki-cdhcXpD9x3QGML/view?usp=sharing';
-  //   // Specify the file name for download
-  //   const fileName = 'Omnath_Dixit_Resume.pdf';
-  //   // Create a temporary anchor element
-  //   const link = document.createElement('a');
-  //   // Set the href and download attributes
-  //   link.href = resumeUrl;
-  //   link.download = fileName;
-  //   // Add the "target" attribute to open the link in a new tab
-  //   link.target = '_blank';
-  //   // Simulate a click event to trigger the download
-  //   link.click();
-  //   // Remove the temporary anchor element
-  //   link.remove();
-  // };
-
 
   const handleFacebookClick = () => {
     window.location.href = 'https://www.facebook.com/profile.php?id=61552071133644';
@@ -191,7 +175,7 @@ const Contact = () => {
         </div>
         
         <div>
-          <button className='mt-[1rem] bg-bgColor p-[1rem] rounded-[1rem] text-[1.2rem] hover:bg-hoverColor transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 font-serif max-[400px]:text-[1rem]' onClick={handleDownloadResume}>Download Resume</button>
+          <button className='mt-[1rem] bg-bgColor p-[1rem] rounded-[1rem] text-[1.2rem] hover:bg-hoverColor transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 font-serif max-[400px]:text-[1rem]' onClick={handleDownloadResume}>View Resume</button>
         </div>
       </div>
 
