@@ -190,7 +190,7 @@ const Contact = () => {
               value={formData.name}
               onChange={handleInputChange}
               placeholder='Your Name'
-              className='p-[1rem] w-[90%] rounded-[0.5rem]  bg-[#FFFDD0] text-[#fff]'
+              className='p-[1rem] w-[90%] rounded-[0.5rem]  bg-[#FFFDD0] text-[#0a0816]'
               required
             />
           </div>
@@ -203,7 +203,7 @@ const Contact = () => {
               value={formData.email}
               onChange={handleInputChange}
               placeholder='Your Email'
-              className='p-[1rem] w-[90%] rounded-[0.5rem]  bg-[#FFFDD0] text-[#fff]'
+              className='p-[1rem] w-[90%] rounded-[0.5rem]  bg-[#FFFDD0] text-[#0a0816]'
               required
             />
           </div>
@@ -217,7 +217,7 @@ const Contact = () => {
               cols={90}
               rows={7}
               placeholder='Your Message'
-              className='p-[1rem] w-[90%] rounded-[0.5rem] bg-[#FFFDD0] text-[#fff]'
+              className='p-[1rem] w-[90%] rounded-[0.5rem] bg-[#FFFDD0] text-[#0a0816]'
               required
             />
           </div>
