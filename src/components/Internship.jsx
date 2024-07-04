@@ -69,7 +69,7 @@ import React from "react";
 const Internship = ({ company, position, duration, description, offerLetter }) => {
 
   return (
-    <div className="max-w-lg mx-auto bg-[#6f2b2b] rounded-xl overflow-hidden mb-4 max-[767px]:bg-[#fff] shadow-xl hover:shadow-[#94a3b8]">
+    <div className="max-w-lg mx-auto bg-[#b4b5c1] rounded-xl overflow-hidden mb-4 max-[767px]:bg-[#fff] shadow-xl hover:shadow-[#94a3b8]">
       <div className="p-4 space-y-[1.2rem]">
         <h2 className="text-2xl font-semibold text-[#2d3748] font-serif">{position}</h2>
         <p className=" text-[#202937] font-serif">{company}</p>
